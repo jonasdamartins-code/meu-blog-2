@@ -42,4 +42,32 @@ main
         <img src="imagem-blog.jpeg" alt="">
     </main>
 <body>   
-</html>                     
+</html>     
+
+<div>
+<button>⚽️<span>1  
+<button>👽️</span>1
+</div>
+
+</main>
+</body>
+<script>
+    const botoes = document.querySelectorAll("button");
+
+    botoes.forEach(
+        function(botao){
+            botao.addEventListener("click", botaoClicado);
+
+            function botaoClicado(){
+            console.log("fui clicado");
+            let texto = botao.querySelector("span");
+            texto.textContent++;
+            
+        }
+        } )
+
+
+
+</script>
+</html>
+    
